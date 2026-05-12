@@ -1,0 +1,15 @@
+# Source PDF and raw page-by-page text chunks are deliberately not redistributed
+# (textbook is copyrighted material). The structured extracts in econ_extracts/
+# are study notes / analysis that fall under fair use for educational purposes.
+*.pdf
+econ_chunks/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
