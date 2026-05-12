@@ -3,8 +3,9 @@
 import json
 from pathlib import Path
 
-DATA = json.load(open('/Users/chaitanyasingh/workspace/econ_data.json'))
-OUT = Path('/Users/chaitanyasingh/workspace/econ_study_app.html')
+HERE = Path(__file__).resolve().parent
+DATA = json.load(open(HERE / 'econ_data.json'))
+OUT = HERE / 'index.html'
 
 TEMPLATE = r"""<!doctype html>
 <html lang="en">

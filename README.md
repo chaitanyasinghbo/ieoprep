@@ -5,7 +5,7 @@ condensed from Krugman's *Economics for AP®* (2nd edition, 942 pages) into
 ~500 cards organised by **Micro / Macro / Financial Literacy** with a built-in
 adaptive quiz.
 
-> **Open [`econ_study_app.html`](econ_study_app.html) in any modern browser.**
+> **Open [`index.html`](index.html) in any modern browser.**
 > No build step, no dependencies beyond Google Fonts.
 
 ---
@@ -46,14 +46,14 @@ Economics.pdf (942 pp)
     │
     ├── parse_extracts.py → econ_data.json   (structured)
     │
-    └── build_html.py     → econ_study_app.html  (single-file app)
+    └── build_html.py     → index.html  (single-file app)
 ```
 
 To regenerate from the markdown extracts:
 
 ```bash
 python3 parse_extracts.py   # extracts → econ_data.json
-python3 build_html.py       # JSON     → econ_study_app.html
+python3 build_html.py       # JSON     → index.html
 ```
 
 The source PDF and raw page-by-page text are not committed (see `.gitignore`).
@@ -66,7 +66,7 @@ agent-based extraction step.
 
 ```
 ieoprep/
-├── econ_study_app.html      # the deliverable — open this
+├── index.html      # the deliverable — open this
 ├── econ_data.json           # structured study data (~422 KB)
 ├── econ_extracts/           # 10 markdown extracts (one per ~95-page slice)
 │   ├── extract_01.md        # pp.   1– 95   intro · PPC · trade · demand

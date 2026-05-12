@@ -4,8 +4,9 @@ import json
 import re
 from pathlib import Path
 
-EXTRACT_DIR = Path('/Users/chaitanyasingh/workspace/econ_extracts')
-OUT_PATH = Path('/Users/chaitanyasingh/workspace/econ_data.json')
+HERE = Path(__file__).resolve().parent
+EXTRACT_DIR = HERE / 'econ_extracts'
+OUT_PATH = HERE / 'econ_data.json'
 
 # Keyword classifiers for category fallback
 MICRO_KW = [
